@@ -12,7 +12,9 @@ class Canvas:
     def update(self): 
         pass 
     def handle_events(self): 
-        pass 
+        for event in pygame.event.get(): 
+            if event == pygame.QUIT: 
+                self.running = False 
     def display(self): 
         pass 
     def run(self):
